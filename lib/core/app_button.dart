@@ -12,7 +12,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppButton extends StatelessWidget {
   final Color? backgroundColor;
-  const AppButton({super.key,this.backgroundColor});
+  final String text;
+  const AppButton({super.key,this.backgroundColor, required this .text});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class AppButton extends StatelessWidget {
         color: backgroundColor??AppColors.primaryColor,
         borderRadius: BorderRadius.circular(8.r)
       ),
-      child: Text(LocaleKeys.login.tr(),style: TextStyle(
+      child: Text(text,style: TextStyle(
         fontSize: 15.sp,
         color: backgroundColor==null?Colors.white :Colors.black,
       ),

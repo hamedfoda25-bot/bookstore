@@ -5,6 +5,6 @@
 abstract class  LocaleKeys {
   static const login = 'login';
   static const  OrderNow = ' OrderNow';
-  static const register ='Register';
+  static const register = 'register';
 
 }

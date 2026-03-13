@@ -50,11 +50,14 @@ class WelcomeScreen extends StatelessWidget {
               ),
 
 
-              AppButton(),
+              AppButton(
+                text: LocaleKeys.login.tr(),
+              ),
               SizedBox(height: 15.h,),
               AppButton(
                 backgroundColor:
                 Colors.white,
+                text: LocaleKeys.register.tr(),
               ),
               SizedBox(height: 94.h,)
 
